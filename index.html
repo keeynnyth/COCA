@@ -24,15 +24,15 @@
 				<img src="img/logo.svg" class="logo">
 			</a>
 			<nav>
-				<a href="#inicio">Inicio</a>
-				<a href="#nosotros">Nosotros</a>
-				<a href="#servicios">Servicios</a>
-				<a href="#galeria">Galeria</a>
-				<a href="#contactenos">Contactenos</a>
+				<a href="./coca-resto/productos.html">Productos</a>
+				<a href="./coca-resto/historia.html">Historia</a>
+				<a href="./coca-resto/nosotros.html">Nosotros</a>
+				<a href="./coca-resto/galeria.html">Galeria</a>
+				<a href="./coca-resto/contacto.html">Contactenos</a>
 			</nav>	
 			<a href="#" class="hamb"><i class="fa-solid fa-bars"></i></a>
 		</div>
-		
+	
 	</header>
 
 	<main>
@@ -146,8 +146,9 @@
 				<div class="row">
 					<div class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 sinpadding-mobile">
 
-
-						<form action="https://formspree.io/f/xleqwzqn"  method="POST" id="form" >
+					
+					<!--
+						<form action=""  method="POST" id="form" >
 							<div class="form-block">
 								<input type="text" name="nombre" class="form-control" placeholder="Nombre" maxlength="50" required minlength="8" id="nombre">
 							</div>
@@ -161,12 +162,31 @@
 							</div>
 
 							<div class="form-block bloque-ultimo">
-								<button type="submit" id class="boton boton-negro" value="Enviar" > Enviar </button>
+								<button type="submit" id class="boton boton-negro" onclick="return limpiar(); return alerta()" value="Enviar" > Enviar </button>
 
 								<p class="warnings" id="warnings"></p>
 							</div>
 						</form>
+						-->
+						<form action=""  method="POST" id="form" >
+							<div class="form-block">
+								<input type="text" name="nombre" class="form-control" placeholder="Nombre" maxlength="50" required maxlength="25" id="nombre">
+							</div>
+	
+							<div class="form-block">
+								<input type="email" name="email" class="form-control" placeholder="Email" maxlength="70" required minlength="10" id="email">
+							</div>
 
+							<div class="form-block">
+								<textarea name="mensaje" placeholder="Mensaje" maxlength="200" id="mensaje"></textarea>
+							</div>
+
+							<div class="form-block bloque-ultimo">
+								<input type="button" id class="boton boton-negro" value="Enviar" onclick="alerta()"  >
+
+								<p class="warnings" id="warnings"></p>
+							</div>
+						</form>
 
 					</div>
 					

@@ -11,15 +11,19 @@ function listo()
 
     });
 }
-const formulario  = document.querySelector("#form");
-const nombre = document.getElementsById('nombre');
-const email = document.getElementById('email');
-const mensaje = document.getElementsByClassName ('mensaje');
-const warnings = document.getElementsById('warnings');
-const form =  document.getElementById('form');
 
-formulario.addEventListener('submit', (event) => {
-   event.preventDefault();
-} );
+
+function alerta(){
+    const nom = document.getElementById('nombre').value;
+        
+    alert(nom+" su informacion ha sido enviada correctamente ");
+    form.reset();  //limpia los campos del formulario una vez que se envía el mensaje de correo
+}
+
+formu = document.getElementById('form');
+
+formu.reset;
+
+
 
 

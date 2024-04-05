@@ -97,6 +97,12 @@ h1{
 	text-shadow: 1px 1px 2px black;
 }
 
+.parrafo1{
+	text-shadow: 15px 5px 5px red;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 footer
 {
 	background-color: black;
@@ -594,7 +600,9 @@ margin-bottom: 0;
 	position: relative;
 	height: 50vh;
    }
-   .parrafo1{
+}
+   /*
+  .parrafo1{
 	padding-left: 1rem;
 	padding-right: 1rem;
 	text-align: justify;
