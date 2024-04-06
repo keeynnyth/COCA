@@ -1,0 +1,834 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root{
+	--primary-color: #fe001a ; /* red */
+
+}
+
+body {
+	background:linear-gradient(45deg,white,whitesmoke, black);
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	overflow: hidden;
+	
+}
+
+
+
+
+.encabezado{
+	position: absolute;
+	top: 11%;
+	left: 45.5%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	font-family: "coka";
+	color: var(--primary-color);
+	font-size: 80px;
+	text-shadow: 3px 3px rgba(0, 0, 0, .3);
+	letter-spacing: 4px;
+}
+
+.loguito{
+	position: absolute;
+	top: 11%;
+	left:5.5%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 90px;
+	
+}
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 50px;
+
+	padding: 100px 0;
+/*grid*/
+display: grid;
+grid-template-columns: 3fr 1fr;
+gap:20px;
+min-height: 100vh;
+position: relative;
+z-index: 2;
+overflow: hidden;
+	
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+	/*grid */
+	display :grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap:20px;
+	width:  100%;
+	
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	opacity: 0.7;
+	background-position: center center;
+	transition: .5s ease-in-out all;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 24px;
+	&:hover{
+		transform: scale(1.05);
+		opacity: 1;
+	
+	}
+
+	
+	
+}
+
+.card .textos {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	/*grid
+	display: grid;
+	grid-template-rows: 1fr auto;
+	*/
+
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+
+	/* grid
+	display: grid;
+	grid-template-rows: auto aut auto;
+	align-items: center;    
+	*/
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+box-shadow: rgba(0,  0, 0, 0.35) 0px 4px 8px -4px;
+transition: all ease-in-out  0.2s;
+background-color: whitesmoke;
+opacity:  0.7;
+
+
+&:hover{
+    box-shadow: rgba(0,  0, 0, 0.65) 0px 8px 15px 0px;
+    background-color: whitesmoke;
+    opacity:  1;
+    
+}
+}
+
+.titulo {   
+	font-weight: bold;
+	margin: 10px;
+	line-height: 1.3em;
+	font-size: large;
+
+}
+
+.banner-t{
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 3px;
+	color: #9e9e9e;
+	font-size: 40px;
+ 
+
+}
+
+.banner-p{
+	font-weight: bold;
+	margin: 5px;
+	text-align: justify;
+	line-height: 1.4rem;
+	color: var(--primary-color);
+}
+
+.banner .boton {
+	background: var(--primary-color);
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	color: whitesmoke;
+}
+
+.boton-volver{
+	
+	display: block;
+	width: 25%;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	
+	padding: 10px;
+	background-color: whitesmoke;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	margin: auto;
+	border-color: #fe001a;
+	color: var(--primary-color);
+}
+
+.ancla{
+	text-decoration: none;
+	color: #fff;
+}
+
+video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:  100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.capa{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: #1c1c1d;
+	opacity: 0.7;
+	mix-blend-mode: overlay;
+
+}
+
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 1200px){
+	.contenedor {
+	
+		max-width: 1199px;
+		width: 90%;
+		margin: auto;
+		margin-top: 60px;
+	
+		padding: 100px 0;
+	/*grid*/
+	display: grid;
+	
+	
+	min-height: 100vh;
+	/*grid */
+	display :grid;
+	grid-template-columns: repeat(2, 1.6fr);
+
+	
+	padding-top: 110px;
+	
+	
+	position: relative;
+	box-sizing: border-box;
+	
+	overflow: hidden;
+	}
+	
+	
+	
+	.contenedor-conciertos {
+		display :grid;
+	grid-template-columns: repeat(2, 1.6fr)  ;
+	gap:25px;
+	
+	width: 100%;
+	
+	
+	
+	
+	
+		
+		}
+	
+		.card {
+			width: 100%;
+			border-radius: 10px;
+		height: 250px;
+			font-weight: bold;
+			margin: auto;
+			padding: 10px;
+			object-fit: cover;
+			
+			opacity:  .5;
+			position: relative;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center center;
+			transition: .5s ease-in-out all;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 24px;
+			&:hover{
+				transform: scale(1.05);
+				opacity: 1;
+			
+			}
+		
+			
+		}
+	
+	
+	.encabezado{
+		position: absolute;
+		top: 12%;
+		left: 45.5%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		font-family: "coka";
+		color: var(--primary-color);
+		font-size: 65px;
+		text-shadow: 3px 3px rgba(0, 0, 0, .3);
+	
+		letter-spacing: 3px;
+		
+	}
+	
+	.loguito{
+		position: absolute;
+		top: 12%;
+		left:10%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 90px;
+		
+	}
+	
+	.banner{
+		height:  600px;
+		border-radius: 10px;
+		box-sizing: border-box;
+	
+		width: 80%;
+		margin-left: 80px;
+		padding: auto;
+		display: grid;
+		box-shadow: rgba(0,  0, 0, 0.35) 0px 4px 8px -4px;
+transition: all ease-in-out  0.2s;
+background-color: whitesmoke;
+opacity:  0.7;
+
+
+&:hover{
+    box-shadow: rgba(0,  0, 0, 0.65) 0px 8px 15px 0px;
+    background-color: whitesmoke;
+    opacity:  1;
+    
+}
+		
+	}
+	.banner-p{
+		
+		line-height: 2rem;
+		font-size: 17px;
+	}
+	
+	
+	.banner .boton{
+		width: 300px;
+		margin: auto;
+	}
+	.boton-volver{
+	
+		
+		width:  300px;
+	display: block;
+		
+		
+	}
+
+	.no{
+		display: none;
+	}
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+	.contenedor {
+	
+		max-width: 900px;
+		width: 90%;
+		margin: auto;
+		margin-top: -10px;
+	
+		padding: 100px 0;
+	/*grid*/
+	display: grid;
+	
+	gap:20px;
+	min-height: 100vh;
+	/*grid */
+	display :grid;
+	grid-template-columns: repeat(1, 1fr);
+	
+	padding-top: 120px;
+	
+
+	
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	}
+	
+	
+	
+	.contenedor-conciertos {
+		display :grid;
+	grid-template-columns: repeat(1,100%)  ;
+	gap:20px;
+	margin: auto;
+	width: 100%;;
+	
+	
+	
+		
+		}
+	
+		.card {
+			width: 100%;
+			border-radius: 10px;
+		height: 250px;
+			font-weight: bold;
+			margin: auto;
+			padding: 10px;
+			margin-top: 50px;
+			opacity:  .5;
+			position: relative;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center center;
+			transition: .5s ease-in-out all;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 24px;
+			&:hover{
+				transform: scale(1.05);
+				opacity: 1;
+			
+			}
+		
+			
+		}
+	
+	
+	.encabezado{
+		position: absolute;
+		top: 10%;
+		left: 45.5%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		font-family: "coka";
+		color: var(--primary-color);
+		font-size: 70px;
+		text-shadow: 3px 3px rgba(0, 0, 0, .3);
+		letter-spacing: 3px;
+	}
+	
+	.loguito{
+		position: absolute;
+		top: 10%;
+		left:14%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 95px;
+		
+	}
+	
+	.banner{
+		border-radius: 10px;
+		
+		margin: auto;
+		margin-bottom: 20px;
+		height: 300px;
+		width: 100%;
+		
+		box-sizing: border-box;
+		box-shadow: rgba(0,  0, 0, 0.35) 0px 4px 8px -4px;
+transition: all ease-in-out  0.2s;
+background-color: whitesmoke;
+opacity:  0.7;
+&:hover{
+    box-shadow: rgba(0,  0, 0, 0.65) 0px 8px 15px 0px;
+    background-color: whitesmoke;
+    opacity:  1;
+    
+}
+	
+	
+	}
+	
+	
+	
+	.card-nova{
+		display: none;
+	}
+	
+	.banner .boton{
+		width: 250px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.boton-volver{
+		display: block;
+		margin: auto;
+		width: 300px;
+		
+		
+	}
+	
+	
+	.banner-p{
+		line-height: 1.4rem;
+		font-size: large;
+	}
+	
+	
+}
+
+@media screen and (max-width: 700px) {
+	.contenedor {
+		width: 90%;
+		max-width: 600px;
+		margin: auto;
+	
+	
+		padding: 10px 0;
+	/*grid*/
+	display: grid;
+
+	gap: 1px;
+	min-height: 100vh;
+	/*grid */
+	display :grid;
+	grid-template-columns: repeat(1, 1fr);
+
+	padding-top: 70px;
+
+
+
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	}
+	
+
+	.contenedor-conciertos {
+		display :grid;
+	grid-template-columns: repeat(1, 1fr)  ;
+	gap:10px;
+	margin: auto;
+	margin-top: 40px;
+	
+
+	
+
+		
+		}
+
+		.card {
+			width: 100%;
+			height: 250px;
+			border-radius: 10px;
+			min-height: 150px;
+			font-weight: bold;
+			margin: auto;
+			padding: 10px;
+			opacity:  .5;
+			position: relative;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center center;
+			transition: .5s ease-in-out all;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 24px;
+			&:hover{
+				transform: scale(1.05);
+				opacity: 1;
+			
+			}
+		
+			
+		}
+
+
+	.encabezado{
+		position: absolute;
+		top: 7%;
+		left: 55.5%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		font-family: "coka";
+		color: var(--primary-color);
+		font-size: 50px;
+		text-shadow: 3px 3px rgba(0, 0, 0, .3);
+		letter-spacing: 3px;
+	}
+	
+	.loguito{
+		position: absolute;
+		top: 7%;
+		left:12%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 75px;
+		
+	}
+
+	.banner{
+		padding-top: 0;
+		border-radius: 10px;
+		box-sizing: border-box;
+
+		
+		margin: auto;
+		margin-top: -40px;
+		height:  300px;
+	
+		width: 100%;
+		box-shadow: rgba(0,  0, 0, 0.35) 0px 4px 8px -4px;
+transition: all ease-in-out  0.2s;
+background-color: whitesmoke;
+opacity:  0.7;
+&:hover{
+    box-shadow: rgba(0,  0, 0, 0.65) 0px 8px 15px 0px;
+    background-color: whitesmoke;
+    opacity:  1;
+    
+}
+	
+	}
+
+	.banner-p{
+		line-height: 1.5rem;
+		font-size: 20px;
+		gap:  8px;
+	margin: auto;
+	padding-bottom: 8px
+		
+	};
+
+	.card .card-nova{
+		display: none;
+	}
+
+.card .card-nova .no{
+	display: none;
+}
+
+.boton-volver{
+	margin: auto;
+	width: 300px;
+	display: block;
+}
+
+.banner .boton{
+	width: 300px;
+	
+	
+}
+
+	
+	
+}
+
+@media screen and (max-width: 600px) {
+
+	.contenedor {
+		width: 95%;
+		max-width: 600px;
+		margin: auto;
+	
+	
+		padding: 10px 0;
+	/*grid*/
+	display: grid;
+
+	gap: 1px;
+	min-height: 100vh;
+	/*grid */
+	display :grid;
+	grid-template-columns: repeat(1, 1fr);
+
+	padding-top: 70px;
+
+
+
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	}
+	
+
+	.contenedor-conciertos {
+		display :grid;
+	grid-template-columns: repeat(1, 1fr)  ;
+	gap:10px;
+	margin: auto;
+	margin-top: 40px;
+	
+
+	
+
+		
+		}
+
+		.card {
+			width: 100%;
+			height:auto;
+			border-radius: 10px;
+			min-height: 150px;
+			font-weight: bold;
+			margin: auto;
+			padding: 10px;
+			opacity:  .5;
+			position: relative;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center center;
+			transition: .5s ease-in-out all;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 24px;
+			&:hover{
+				transform: scale(1.05);
+				opacity: 1;
+			
+			}
+		
+			
+		}
+
+
+	.encabezado{
+		position: absolute;
+		top: 7%;
+		left: 55.5%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		font-family: "coka";
+		color: var(--primary-color);
+		font-size: 30px;
+		text-shadow: 3px 3px rgba(0, 0, 0, .3);
+		letter-spacing: 3px;
+	}
+	
+	.loguito{
+		position: absolute;
+		top: 7%;
+		left:15%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 65px;
+		
+	}
+
+	.banner{
+		padding-top: 0;
+		border-radius: 10px;
+		
+
+		box-sizing: border-box;
+		margin: auto;
+		margin-top: -110px;
+		height: 200px;
+	
+		width: 100%;
+		box-shadow: rgba(0,  0, 0, 0.35) 0px 4px 8px -4px;
+transition: all ease-in-out  0.2s;
+background-color: whitesmoke;
+opacity:  0.7;
+&:hover{
+    box-shadow: rgba(0,  0, 0, 0.65) 0px 8px 15px 0px;
+    background-color: whitesmoke;
+    opacity:  1;
+ 
+	
+}
+	
+	}
+	.banner-t{
+		font-size: 1.3rem;
+	}
+
+	.banner-p{
+		line-height: 12px;
+		font-size: 12px;
+		gap:  8px;
+	margin: auto;
+	padding-bottom: 8px
+		
+	};
+
+	.card .card-nova{
+		display: none;
+	}
+
+.card .card-nova .no{
+	display: none;
+}
+
+.boton-volver{
+	margin: auto;
+	width: 180px;
+	display: block;
+	margin-top: -100px;
+	font-size: 15px;
+	
+}
+
+.banner .boton{
+	font-size: 12px;
+	width: 170px;
+	margin: auto;
+	
+	
+}
+
+	
+	
+
+	}
